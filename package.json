@@ -18,8 +18,18 @@
     "@angular/platform-browser": "^14.2.0",
     "@angular/platform-browser-dynamic": "^14.2.0",
     "@angular/router": "^14.2.0",
+    "@srexi/purecounterjs": "^1.5.0",
+    "aos": "^2.3.4",
+    "glightbox": "^3.2.0",
+    "isotope-layout": "^3.0.6",
+    "jquery": "^3.6.4",
+    "ngx-typed-js": "^2.1.1",
+    "popper": "^1.0.1",
     "rxjs": "~7.5.0",
+    "swiper": "^9.2.4",
     "tslib": "^2.3.0",
+    "typed-js": "^0.2.3",
+    "waypoints": "^4.0.1",
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
