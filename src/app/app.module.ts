@@ -7,6 +7,8 @@ import { HeaderComponent } from './component/header/header.component';
 import { FooterComponent } from './component/footer/footer.component';
 import { HomeComponent } from './component/home/home.component';
 import {NgxTypedJsModule} from 'ngx-typed-js';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,10 @@ import {NgxTypedJsModule} from 'ngx-typed-js';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgxTypedJsModule
+    HttpClientModule,
+    FormsModule,
+    NgxTypedJsModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
