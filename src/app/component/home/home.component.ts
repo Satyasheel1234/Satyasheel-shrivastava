@@ -27,7 +27,6 @@ export class HomeComponent implements OnInit {
   }
   
   submitForm(): void {
-     this.showMessage();
     const data = {
       name: this.name,
       email: this.email,
