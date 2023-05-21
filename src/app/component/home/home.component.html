@@ -57,9 +57,15 @@
             </div>
           </div>
           <p>
-            I am an experienced technical lead for the frontend with a focus on delivering high-quality, scalable, and user-friendly web applications. I have a proven track record of leading cross-functional teams of developers, designers, and product managers to deliver projects on time and within budget. I am passionate about optimizing frontend performance, ensuring accessibility for all users, and staying up-to-date with the latest frontend technologies and trends.
-
-I have extensive experience in developing frontend architectures and design patterns, setting coding standards, and implementing automated testing strategies. I am skilled in optimizing frontend performance through techniques such as lazy loading, caching, and code splitting, and am familiar with tools such as Webpack and Babel. I am committed to fostering a culture of continuous learning and improvement, and enjoy mentoring junior developers.
+            I am an experienced technical lead for the frontend with a focus on delivering high-quality, scalable, and
+            user-friendly web applications. I have a proven track record of leading cross-functional teams of developers,
+            designers, and product managers to deliver projects on time and within budget. I am passionate about optimizing
+            frontend performance, ensuring accessibility for all users, and staying up-to-date with the latest frontend
+            technologies and trends. I have extensive experience in developing frontend architectures and design patterns,
+            setting coding standards, and implementing automated testing strategies. I am skilled in optimizing frontend
+            performance through techniques such as lazy loading, caching, and code splitting, and am familiar with tools such as
+            Webpack and Babel. I am committed to fostering a culture of continuous learning and improvement, and enjoy mentoring
+            junior developers.
           </p>
           <!-- <p>
               Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis.
@@ -712,7 +718,13 @@ I have extensive experience in developing frontend architectures and design patt
             </div>
 
             <iframe
-              src= "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d130265.83887448022!2d17.81724810849818!3d59.32621310809905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f763119640bcb%3A0xa80d27d3679d7766!2sStockholm!5e0!3m2!1sen!2sse!4v1683623578774!5m2!1sen!2sse" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d130265.83887448022!2d17.81724810849818!3d59.32621310809905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f763119640bcb%3A0xa80d27d3679d7766!2sStockholm!5e0!3m2!1sen!2sse!4v1683623578774!5m2!1sen!2sse"
+              width="600"
+              height="450"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
               frameborder="0"
               style="border:0; width: 100%; height: 290px;"
               allowfullscreen
@@ -721,24 +733,25 @@ I have extensive experience in developing frontend architectures and design patt
         </div>
 
         <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-          <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+          <form (ngSubmit)="submitForm()">
             <div class="row">
               <div class="form-group col-md-6">
-                <label for="name">Your Name</label> <input type="text" name="name" class="form-control" id="name" required />
+                <label for="name">Your Name</label>
+                <input type="text" id="name" [(ngModel)]="name" name="name" class="form-control" id="name" required />
               </div>
               <div class="form-group col-md-6">
                 <label for="name">Your Email</label>
-                <input type="email" class="form-control" name="email" id="email" required />
+                <input type="email" class="form-control" id="email" [(ngModel)]="email" name="email" required />
               </div>
             </div>
             <div class="form-group">
               <label for="name">Subject</label> <input type="text" class="form-control" name="subject" id="subject" required />
             </div>
             <div class="form-group">
-              <label for="name">Message</label> <textarea class="form-control" name="message" rows="10" required></textarea>
+              <label for="name">Message</label>
+              <textarea class="form-control" id="message" [(ngModel)]="message" name="message" rows="10" required></textarea>
             </div>
             <div class="my-3">
-              <div class="loading">Loading</div>
               <div class="error-message"></div>
               <div class="sent-message">Your message has been sent. Thank you!</div>
             </div>
