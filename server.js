@@ -19,7 +19,7 @@ app.post('/contact', (req, res) => {
     service: 'gmail',
     auth: {
       user: 'satyasheel19@gmail.com',
-      pass: 'aitrnmyfpqjlyoto'
+      pass: 'gsrkyjupbsfekffh'
     }
   });
 
